@@ -1,0 +1,697 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="The Lawn Barber of NC LLC" property="og:title">
+    
+    
+    <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/style.css" rel="stylesheet">
+    
+    <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/render.css" rel="stylesheet">
+    
+    <script src="https://prophone.herokuapp.com/staticfiles/landing_page_gen/render.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <meta content="https://landing-page-app-hero-images.s3.amazonaws.com/media/lawn_barber_hxfuYuA.png" property="og:image">
+    <meta content="The Lawn Barber of NC LLC" property="twitter:title">
+    <meta content="https://landing-page-app-hero-images.s3.amazonaws.com/media/lawn_barber_hxfuYuA.png" property="twitter:image">
+    <link href="https://landing-page-app-hero-images.s3.amazonaws.com/media/lawn_barber_hxfuYuA.png" rel="shortcut icon" type="image/x-icon">
+    <link href="https://landing-page-app-hero-images.s3.amazonaws.com/media/lawn_barber_hxfuYuA.png" rel="apple-touch-icon">
+    
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <title>The Lawn Barber of NC LLC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
+</head>
+<body>
+
+
+<div class="sticky w-full lg:h-25 lg:py-5 items-start justify-start text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+  <div x-data="{ open: false }" class="flex flex-col lg:flex-r max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row lg:px-6 lg:px-8">
+    <div class="py-4 flex flex-row items-center justify-between">
+     
+     <a href="#about"> <img class="h-16 w-auto relative" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/lawn_barber_hxfuYuA.png" alt="The Lawn Barber of NC LLC logo"> </a>
+    
+      <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:justify-end lg:flex-row">
+      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#about">About</a>
+      
+      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#services">Services</a>
+      
+      
+      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 
+      focus:outline-none focus:shadow-outline" href="#our-work">Our Work</a>
+      
+      
+      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#testimonials">Testimonials</a>   
+         
+      
+      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#faqs">Faqs</a>
+      
+      
+      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#find-us">Find Us</a>
+      
+      <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"x-data="{open: false}">
+      <a x-on:click.prevent="open = true" class="" href="">Send Us a Text</a>
+        <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black bg-opacity-75 z-50">
+                <form x-on:click.away="open = false" x-show.transition="open" class="max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+                        <h3 class="mb-6 text-2xl font-medium text-center">Send us a Text</h3>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <input type="text" name="first-name" id="1-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
+                        </div>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <input type="text" name="last-name" id="1-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
+                        </div>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <input type="text" name="phone-number" id="1-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
+                        </div>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <textarea name="message" cols="5" id="1-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
+                        </div>
+                        <div class="block">
+                            <button type="button" onclick= "send_sms(1, 'lawnbarberofnc')" class="w-full px-3 py-4 font-bold font-lg text-white bg-gray-900 rounded-lg">Send</button>
+                        </div>
+                        
+    
+                </form>
+            </div>
+        </div>
+    </nav>
+    </div>
+  </div>
+
+
+
+
+  
+<div class = "flex w-full flex-col">
+
+<section class="flex flex-col w-full bg-gray-900 lg:flex-row lg:flex-wrap sm:mx-auto">
+    <div class="flex justify-end p-8 bg-gray-900 lg:py-32 lg:px-16 lg:pl-10 lg:w-1/2">
+        <div class="flex flex-col items-center lg:items-start justify-center w-full lg:max-w-lg">
+            <h5 class="mb-3 text-3xl text-center font-extrabold text-white leading-none sm:text-4xl lg:text-7xl text-center lg:text-left">
+                The Lawn Barber of NC LLC
+            </h5>
+            
+            <p class="py-5 mb-5 text-white lg:text-xl text-center lg:text-left">
+                &quot;Cut it like you own it&quot;
+            </p>
+            <div class="flex text-center justify-center items-center" x-data="{open: false}">
+                <button type="button" x-on:click.prevent="open = true" class="inline-flex items-center justify-center bg-gray-200 h-24 px-6 lg:mr-6 tracking-wide text-black transition duration-200 rounded-lg hover:bg-white hover:text-gray-400 focus:shadow-outline focus:outline-none">
+                    <h5 class="text-3xl font-extrabold">Send us a text</h5> 
+                </button>
+                <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black bg-opacity-75 z-50">
+                    <form x-on:click.away="open = false" x-show.transition="open" class="max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+                            <h3 class="mb-6 text-2xl font-medium text-center">Send us a Text</h3>
+                            <div class="block mb-4 border border-gray-200 rounded-lg">
+                                <input type="text" name="first-name" id="2-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
+                            </div>
+                            <div class="block mb-4 border border-gray-200 rounded-lg">
+                                <input type="text" name="last-name" id="2-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
+                            </div>
+                            <div class="block mb-4 border border-gray-200 rounded-lg">
+                                <input type="text" name="phone-number" id="2-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
+                            </div>
+                            <div class="block mb-4 border border-gray-200 rounded-lg">
+                                <textarea name="message" cols="5" id="2-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
+                            </div>
+                            <div class="block">
+                                <button type="button" onclick= "send_sms(2, 'lawnbarberofnc')" id= "send" class="w-full px-3 py-4 font-bold font-lg text-white bg-gray-900 rounded-lg">Send</button>
+                            </div>
+                            
+     
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="relative order-first lg:order-last block lg:w-1/2 ">
+        <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/lawnbarberofnc-hero-image-ZhopLai_nt3cGwg.jpeg" alt="Hero Image" class="object-cover w-full lg:absolute h-80 lg:h-full">
+    </div>
+</section>
+
+
+ 
+    
+
+  
+
+    <section id = "about" class="flex flex-col flex-grow w-full overflow-hidden bg-white lg:flex-row sm:mx-auto text-gray-900">
+        <div class="relative lg:w-1/2">
+            
+            <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/lawnbarberofnc.com-about-us-_YSNbz4D.jpeg" alt="About Us Image" class="object-cover w-full lg:absolute h-80 lg:h-full">
+            
+        </div>
+        <div class="py-5 lg:py-0 flex flex-col bg-white lg:py-32 lg:px-16 lg:w-1/2">
+            <div class="flex flex-col items-center lg:items-start w-full lg:max-w-lg">
+                <h5 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl">
+                    About Us
+                </h5>
+                <p class="py-5 mb-5 text-center lg:text-left text-gray-900 lg:text-xl">
+                Landscaping company that takes pride in making your yard look its very best.  “Cut it like you own it” is my motto because I service every yard like it’s my own.
+                </p>                
+            </div>
+
+            <div class = "flex flex-row flex-wrap text-center w-full lg:max-w-lg">
+            	
+
+
+            
+                <div class="mb-30 mx-auto w-1/3  " data-aos="fade-down" data-aos-delay="400">
+                    <span class = "text-gray-400"> <i class="fas fa-shield-alt fa-2x "></i> </span>
+                    
+                    <div class="mt-5 text-md font-bold text-gray-900 uppercase">
+                        Insured
+                    </div>
+  
+                     <br>
+                </div>
+            
+
+            	
+            	
+            
+                <div class="mb-30 mx-auto w-1/3 " data-aos="fade-down" data-aos-delay="400">
+                    <span class = "text-gray-400"> <i class="fas fa-heart fa-2x "></i> </span>
+                    <div class="mt-5 text-md font-bold text-gray-900 uppercase">
+                        Family Owned
+                    </div>
+                    <br>
+                </div>
+            	
+            	
+            
+            </div>
+            
+                <div class = "mt-10 mb-0 flex flex-row justify-center lg:justify-start text-center w-full lg:max-w-lg">
+                    <h5 class="mb-3 text-4xl justify-center lg:justify-start text-center lg:text-left text-gray-900 font-extrabold leading-none tracking-wide text-center">
+                        Connect with us on Social
+                    </h5>
+                </div>
+                <div class = "flex flex-row mb-5 justify-center space-x-3 md:space-x-8 lg:space-x-12 lg:flex-nowrap mt-4 lg:justify-start   w-full lg:max-w-lg">
+                
+                <a target="_blank" href = "https://www.facebook.com/lawnbarberofnc"> <span class = "text-gray-400"> <i class="fab fa-facebook fa-3x lg:fa-3x "></i> </span> </a> 
+                
+                
+                <a target="_blank"  href = "https://www.instagram.com/lawnbarberofnc/"> <span class = "text-gray-400"> <i class="fab fa-instagram fa-3x lg:fa-3x "></i></i> </span> </a> 
+                
+                
+                <a target="_blank" href = "https://www.google.com/maps/place/The+Lawn+Barber+LLC/@34.7759471,-77.5304021,11z/data=!3m1!4b1!4m5!3m4!1s0x89a91785c24a3433:0x830466f9c4803e24!8m2!3d34.7760273!4d-77.390314"> <span class = "text-gray-400"> <i class="fab fa-google fa-3x lg:fa-3x "></i> </span> </a> 
+                
+                
+                
+                           
+               </div>
+            
+        </div>
+
+    </section>
+</div>
+    
+    
+    <section id= "services" class="lg:mt-0 relative w-full px-8 font-sans leading-6 bg-gray-900 border-0 border-gray-200 border-solid text-white">
+        <div class="flex flex-col items-center max-w-6xl px-8 py-20 mx-auto leading-6 border-solid md:items-stretch md:justify-center md:py-24">
+            
+            <h5 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
+                Our Services
+            </h5>
+            <p class="w-full max-w-3xl mx-0 mx-auto mt-4 mb-0 font-sans text-sm font-medium leading-relaxed text-center text-gray-400 border-0 border-gray-200 lg:text-lg md:text-base">
+                What we are best at.
+            </p>
+
+            <div class="grid grid-cols-3 gap-5 mt-10 sm:grid-cols-8 lg:grid-cols-12">
+
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 text-white">
+                    <div class="box-border flex flex-col items-center h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid sm:items-start sm:text-left">
+                        
+                        <div class="md:mt-6 font-sans text-center border-0 border-gray-200 sm:text-left text-gray-400">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400">Mowing, trimming, edging, blowing</span>
+                            <p
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid sm:text-left">
+                                Our regular lawncare maintenance includes mowing, trimming, edging, and blowing.  We pay extra attention to detail to ensure your yard is just right.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 text-white">
+                    <div class="box-border flex flex-col items-center h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid sm:items-start sm:text-left">
+                        
+                        <div class="md:mt-6 font-sans text-center border-0 border-gray-200 sm:text-left text-gray-400">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400">Mulch &amp; Rock Installation</span>
+                            <p
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid sm:text-left">
+                                We provide mulch and rock installation that is done right and comes with a weed barrier.  Mulch and rock will improve the overall look of your yard.  Mulch comes in black, red, chocolate, or natural and rock comes in a wide variety of colors and sizes.
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 text-white">
+                    <div class="box-border flex flex-col items-center h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid sm:items-start sm:text-left">
+                        
+                        <div class="md:mt-6 font-sans text-center border-0 border-gray-200 sm:text-left text-gray-400">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400">Aeration</span>
+                            <p
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid sm:text-left">
+                                Aerating your lawn relieves soil compaction and enhances grass growth.  Any lawn can benefit from aeration when it&#x27;s timed well and done properly.  
+
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 text-white">
+                    <div class="box-border flex flex-col items-center h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid sm:items-start sm:text-left">
+                        
+                        <div class="md:mt-6 font-sans text-center border-0 border-gray-200 sm:text-left text-gray-400">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400">Fertilization</span>
+                            <p
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid sm:text-left">
+                                Fertilization will help your lawn by improving overall health and making it greener, thicker, and lusher.  It will not only help your lawn look better but it will also last longer.
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 text-white">
+                    <div class="box-border flex flex-col items-center h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid sm:items-start sm:text-left">
+                        
+                        <div class="md:mt-6 font-sans text-center border-0 border-gray-200 sm:text-left text-gray-400">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400">Weed control</span>
+                            <p
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid sm:text-left">
+                                We can get rid of the most common and most stubborn weeds in your lawn.  Weed control is key to overall health of your lawn and making your yard stand out from the rest.
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 text-white">
+                    <div class="box-border flex flex-col items-center h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid sm:items-start sm:text-left">
+                        
+                        <div class="md:mt-6 font-sans text-center border-0 border-gray-200 sm:text-left text-gray-400">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400">Landscape Design</span>
+                            <p
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid sm:text-left">
+                                Whether you know exactly what you want or don&#x27;t have a clue...we can help.  We can make your vision come to life or give recommendations on what will make your yard look it&#x27;s best.
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+            
+            </div>
+        </div>
+    </section>
+    
+    
+    <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden bg-white md:pt-20 xl:pt-20 xl:pb-20">
+        <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
+                <h5 class="mb-3 text-3xl text-gray-900 font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h5>
+                <p class="my-3 mb-10 text-xl font-medium text-gray-500 text-center">See why our customers love us</p>
+                <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row">
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/lawnbarberofnc.com-gallery-image-1_S8PiMw8.jpeg" alt=""></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/lawnbarberofnc.com-gallery-image-2_GtgxDcz.jpeg" alt=""></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/lawnbarberofnc.com-gallery-image-3_VZUYg7k.jpeg" alt=""></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/lawnbarberofnc.com-gallery-image-4_cWncWqy.jpeg" alt=""></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/lawnbarberofnc.com-gallery-image-5_X7eFhmr.jpeg" alt=""></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/lawnbarberofnc.com-gallery-image-6_1n34Gkh.jpeg" alt=""></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/lawnbarberofnc.com-gallery-image-7_ZzomD8q.jpeg" alt=""></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/lawnbarberofnc.com-gallery-image-8_bTLmyHo.jpeg" alt=""></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/lawnbarberofnc.com-gallery-image-9_bqr6B1e.jpeg" alt=""></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/lawnbarberofnc.com-gallery-image-10_CRWG21Y.jpeg" alt=""></div>
+                    
+                 
+                </div>     
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id= "testimonials" class="flex items-center justify-center bg-gray-900 py-20 min-w-screen px-4">
+        <div class="px-16 bg-gray-900">
+            <div class="container flex flex-col items-center lg:items-startmx-auto lg:items-center">
+                <div class = "sm:mb-4 md:mb-0">
+                <p class="relative flex  text-center sm:justify-center sm:mb-8 md:justify-start w-full text-lg font-bold tracking-wider text-white uppercase lg:justify-center lg:items-center mb-10">Don't just take our word for it</p>
+                </div>
+
+
+                <h5 class="mb-3 text-3xl text-white font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
+                    
+                    Testimonials & Reviews</h5>
+                <div class="block w-full h-1 max-w-lg mt-6 bg-purple-100 rounded-full"></div>
+                <div class="items-start justify-start w-full mt-12 mb-4 lg:flex lg:flex-wrap">
+
+                    
+            
+                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h4 class="font-bold text-gray-200">Cristy Mullin</h4>
+                            <p class="text-gray-200">Homeowner</p>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-white text-center lg:text-left">"Seriously you won&#x27;t find anyone thats better then Scott. 100% Dedicated to doing the absolute best job he can. He takes pride in his work and takes you step by step to ensure its exactly what you want. I&#x27;ll definitely be calling him again and recommending him to all our friends."</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h4 class="font-bold text-gray-200">Craig Cook</h4>
+                            <p class="text-gray-200">Homeowner</p>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-white text-center lg:text-left">"Scott is a hard worker! He offered some thoughts and helpful hints and got our yard looking really good. Lived here for 1.5 years and this is the best the yard has looked! Wonderful pricing and honest guy, would recommend highly!"</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h4 class="font-bold text-gray-200">Brittany Burke</h4>
+                            <p class="text-gray-200">Homeowner</p>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-white text-center lg:text-left">"Would highly recommend The Lawn Barber!!!!!!
+Scott is very professional and personable. He is very dedicated and does a very thorough job. My lawn was a big mess until started taking care of it. He mowed my over grown yard, edged, weed wacked and pulled all the weeds from my flower beds that were severely over grown and he is great about cleaning up after he&#x27;s done. My yard is like night and day. Also He is great at keeping me informed on when he will arrive to ensure it fits with my schedule. Overall amazing job!!!"</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h4 class="font-bold text-gray-200">Renae Bazile</h4>
+                            <p class="text-gray-200">Homeowner</p>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-white text-center lg:text-left">"We were looking for someone who took the time and put the detail in caring for our lawn, and around our plants. He listened to my wants, was amazingly professional while also maintaining good communication throughout his service. The work he does is quality and we won’t hesitate to refer him to others closest to us! Thank you Lawn Barber!"</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h4 class="font-bold text-gray-200">Phyllis Harris-Gray</h4>
+                            <p class="text-gray-200">Homeowner</p>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-white text-center lg:text-left">"Amazing job. My yard didn’t even look the same once they finished. I am definitely using them again and referring him to others. Great work! Very professional"</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h4 class="font-bold text-gray-200">Karen Burnam</h4>
+                            <p class="text-gray-200">Homeowner</p>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-white text-center lg:text-left">"Highly recommend Scott Capps!  All the reviews of The Lawn Barber LLC regarding his work ethic, quality of his work, reasonable pricing etc definitely describe Scott Capps.  This review is a MUST READ for homeowners that may have water pooling around their slab as a result of water runoff from their roofs.  I hired Scott to take care of my lawn as I  was getting ready to move into my new home.  He made my lawn look fantastic!   I asked him to revamp the landscape in front of the house.  As we began talking about that project, we discovered that I had a drainage issue.  All the water from the roof was flowing into the front drain and was leaving water pooling in the front yard and settling around the slab.  Scott was able to eliminate that issue and drain the water away from the slab.  The most recent hurricane was no match for his work!  There was no pooling of water, the ground was wet but not soggy as you walked on it.  Now on to the new landscaping!"</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+                </div>               
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+<section id= "faqs" class="py-16 bg-white md:py-20 lg:py-24">
+    <div class="max-w-5xl px-12 mx-auto xl:px-0">
+
+        <h2 class="text-3xl text-gray-900 font-bold md:text-4xl lg:text-6xl xl:text-7xl text-center lg:text-left">FAQs</h2>
+        <p class="mt-4 text-xl font-thin text-gray-900 lg:text-2xl text-center lg:text-left">Your questions answered</p>
+
+        <div class="relative mt-12 space-y-3">
+
+        
+
+            <!-- Question 1 -->
+            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-gray-100 select-none">
+                <h4 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-gray-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-gray-900  lg:text-left">
+                    <span class = "flex text-center">Are you insured?</span>
+                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </h4>
+                <p class="px-2 pt-0 -mt-2 text-gray-900 sm:text-lg py-7 text-center lg:text-left"
+                    x-transition:enter="transition-all ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform -translate-y-4"
+                    x-transition:enter-end="opacity-100 transform -translate-y-0"
+                    x-transition:leave="transition-all ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform -translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-4"
+                    x-show="show"
+                    x-cloak>Yes.  I am fully insured and carry a 1,000,000 policy for liability, casualty, and property damage.</p>
+            </div>
+
+        
+
+            <!-- Question 1 -->
+            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-gray-100 select-none">
+                <h4 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-gray-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-gray-900  lg:text-left">
+                    <span class = "flex text-center">Do you offer free quotes?</span>
+                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </h4>
+                <p class="px-2 pt-0 -mt-2 text-gray-900 sm:text-lg py-7 text-center lg:text-left"
+                    x-transition:enter="transition-all ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform -translate-y-4"
+                    x-transition:enter-end="opacity-100 transform -translate-y-0"
+                    x-transition:leave="transition-all ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform -translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-4"
+                    x-show="show"
+                    x-cloak>Yes!  We will be glad to come out and take a look at your yard and give you a free quote and there is no obligation!</p>
+            </div>
+
+        
+
+            <!-- Question 1 -->
+            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-gray-100 select-none">
+                <h4 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-gray-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-gray-900  lg:text-left">
+                    <span class = "flex text-center">How do you schedule your clients?</span>
+                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </h4>
+                <p class="px-2 pt-0 -mt-2 text-gray-900 sm:text-lg py-7 text-center lg:text-left"
+                    x-transition:enter="transition-all ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform -translate-y-4"
+                    x-transition:enter-end="opacity-100 transform -translate-y-0"
+                    x-transition:leave="transition-all ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform -translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-4"
+                    x-show="show"
+                    x-cloak>I do my best to work setup the maintenance schedule according to what is best for each client.  If the property has a fence, the client doesn&#x27;t have to be home for me to service the lawn.  Payment is not needed until the client inspects the work to make sure their expectations are met.  If the client lets me know ahead of time I will also make sure any special requests are taken care of.</p>
+            </div>
+
+        
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="find-us" class="py-16 bg-white md:py-20 lg:py-20">
+    <div class="max-w-5xl px-12 mx-auto text-center xl:px-0">
+
+    <h5 class="mb-5 text-3xl text-gray-900 mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl"> Find Us</h5>
+    <iframe
+            width="100%"
+            height="500px"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBPscVsAYq9Mo6GmcMKF1tUfrWWN2Gt93M
+                &q=Jacksonville,+Carolina+del+Norte" allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+
+
+<section class="py-10 bg-gray-900">
+    
+        <div class="flex flex-col justify-around text-center md:flex-row">
+            <p class="order-last text-sm leading-tight text-gray-500 md:order-first"> Crafted with <a  href="https://devdojo.com/tails" class="text-white">ProPhone</a>. Built with ❤️ by our team. </p>
+             
+            <ul class="flex flex-row flex-wrap text-center justify-center pb-3 lg:-ml-4 lg:-mr-4 text-sm">
+                <li> <a href="#about" class="px-2 md:px-4 text-gray-500 hover:text-white">About</a> </li>
+                
+                <li> <a href="#services" class="px-2 md:px-4 text-gray-500 hover:text-white">Services</a> </li>
+                
+                
+                <li> <a href="#our-work" class=" px-2 md:px-4 text-gray-500 hover:text-white">Our Work</a> </li>
+                
+                
+                <li> <a href="#testimonials" class="px-2 md:px-4 text-gray-500 hover:text-white">Testimonials</a></li>
+                
+                
+                <li> <a href="#faqs" class="px-2 md:px-4 text-gray-500 hover:text-white">Faqs</a></li>
+                
+                
+                <li> <a href="#find-us" class=" px-2 md:px-4 text-gray-500 hover:text-white">Find Us</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
